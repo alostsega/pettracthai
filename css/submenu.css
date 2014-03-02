@@ -1,0 +1,67 @@
+ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+    z-index:2;
+    color: #fff;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+    z-index:2;
+
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    display:inline-block;
+    z-index:2;
+
+   
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+    z-index:2;
+
+
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    /*width: 120px;*/
+    z-index:2;
+    /*background: #5b5b5b;*/
+    text-align: left;
+
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+    z-index:2;
+}
+
+ul#menu li ul.sub-menu li a{
+    width: 120px;
+    /*background: #bababa;*/
+    color: #000;
+
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px; 
+    border-radius: 5px;
+
+    background: -moz-linear-gradient(top,  #fff 0%, #bababa 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#bababa));
+    background: -webkit-linear-gradient(top,  #fff 0%,#bababa 100%);
+    background: -o-linear-gradient(top,  #fff 0%,#bababa 100%);
+    background: -ms-linear-gradient(top,  #fff 0%,#bababa 100%);
+    background: linear-gradient(to bottom,  #fff 0%,#bababa 100%);
+}
+
+ul#menu li ul.sub-menu li a:hover{
+    color:#fff;
+    background: #ed717d;
+}

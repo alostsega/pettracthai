@@ -1,0 +1,30 @@
+#menu_left{
+	position:absolute;
+	margin-top: 0px;
+	left: 0px;
+	/*width: 150px;
+	height: 150px;
+	background-color: #898989;*/
+	font-family: tahoma;
+	font-size: 17px;
+}
+
+#content_right{
+	position:relative;
+	right: 0px;
+	left: 170px;
+	top:0px;
+	width: 630px;
+	/*height: 500px;*/
+	background-color: #fff;
+}
+
+.classname { 
+				border:solid 1px #f96a7b;  
+				text-align:center; 
+				background:#bababa; 
+				padding:10px 10px 400px 10px;  
+				-moz-border-radius: 5px;  
+				-webkit-border-radius: 5px; 
+				border-radius: 5px;
+}
